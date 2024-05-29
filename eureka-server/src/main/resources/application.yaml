@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: eureka-server
+  config:
+    import: optional:file:eureka-server/.env[.properties]
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${EUREKA_HOST}:8761/eureka
+server:
+  port: 8761

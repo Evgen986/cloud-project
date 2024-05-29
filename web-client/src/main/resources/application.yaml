@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: web-client
+  cloud:
+    openfeign:
+      client:
+        config:
+          storage:
+            url: http://localhost:8765/storage
+          storage-2:
+            url: http://localhost:8765/storage-2

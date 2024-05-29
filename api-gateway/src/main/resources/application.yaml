@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: api-gateway
+  config:
+    import: optional:file:eureka-server/.env[.properties]
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://${EUREKA_HOST}:8761/eureka
+server:
+  port: 8765
