@@ -1,4 +1,4 @@
-# Diesel microservice
+# Storage microservice
 
 Микросервисный проект использующий два хранилища и веб клиент.
 
